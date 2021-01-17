@@ -1,0 +1,93 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: vc Administrator, ss, LIC=LJWDY-ISE1Z-LT13E-5T3WL-UUXX7-QW4R0
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\boold _pressure\Sphygmomanometer20201107\USER\USART.uvprojx
+Project File Date:  11/10/2020
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling task.c...
+..\HARDWARE\TASK\task.c(161): warning:  #223-D: function "u2_printf" declared implicitly
+                                                u2_printf("%d,%d\r\n",yl1,yl2);//前后对应压力
+..\HARDWARE\TASK\task.c(186): warning:  #223-D: function "u2_printf" declared implicitly
+                                                u2_printf("%d,%d\r\n",yl3,yl4);//前后对应压力
+..\HARDWARE\TASK\task.c(249): warning:  #550-D: variable "x" was set but never used
+    u16 x,y,hello;
+..\HARDWARE\TASK\task.c(249): warning:  #550-D: variable "y" was set but never used
+    u16 x,y,hello;
+..\HARDWARE\TASK\task.c(249): warning:  #177-D: variable "hello" was declared but never referenced
+    u16 x,y,hello;
+..\HARDWARE\TASK\task.c(525): warning:  #223-D: function "u2_printf" declared implicitly
+  u2_printf("\n%d,%d,%d,%d",code,sData_single_management.YALI_PD_insert_mmgh,sData_single_management.YALI_PS_insert_mmgh,(u16)HR_BPM);
+..\HARDWARE\TASK\task.c(360): warning:  #177-D: variable "cut" was declared but never referenced
+        u16 cut;
+..\HARDWARE\TASK\task.c(371): warning:  #550-D: variable "max1" was set but never used
+        u16 max1=0;
+..\HARDWARE\TASK\task.c(686): warning:  #223-D: function "STMFLASH_Write_NoCheck" declared implicitly
+                                STMFLASH_Write_NoCheck(page_test,save_buf,sizeof(save_buf));
+..\HARDWARE\TASK\task.c(709): warning:  #223-D: function "u2_printf" declared implicitly
+                           u2_printf("\nsucess:%d,%d,%d",sData_single_management.YALI_PD_insert_mmgh,sData_single_management.YALI_PS_insert_mmgh,(u16)HR_BPM);
+..\HARDWARE\TASK\task.c(720): warning:  #223-D: function "STMFLASH_Write_NoCheck" declared implicitly
+                         STMFLASH_Write_NoCheck(page_test,save_buf,sizeof(save_buf));
+..\HARDWARE\TASK\task.c(1002): warning:  #223-D: function "u2_printf" declared implicitly
+                                u2_printf("string_temp_time_date_syn_measure\r\n");
+..\HARDWARE\TASK\task.c(1027): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\TASK\task.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=23950 RO-data=1134 RW-data=340 ZI-data=28436  
+FromELF: creating hex file...
+"..\OBJ\USART.axf" - 0 Error(s), 13 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Jansson.1.0.0.pack
+                Keil::Data Exchange:JSON:Jansson:2.7.0
+                Jansson is a C library for encoding, decoding and manipulating JSON data
+   * Component: Jansson Version: 2.7.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Administrator\Desktop\boold _pressure\Sphygmomanometer20201107\USER\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\Jansson\1.0.0\src
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: Keil::Data Exchange:JSON:Jansson:2.7.0
+      Include file:  src\jansson.h
+      Library file:  lib\jansson_CM3LE.lib
+      Source file:   src\jansson_config.c
+</pre>
+</body>
+</html>
